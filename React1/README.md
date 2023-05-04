@@ -1,4 +1,21 @@
 <h1>오시영</h1>
+
+## 8주차 2023-04-27
+### Arguments 전달하기
+
+    -함수를 정의할 때는 Parameter 혹은 매개변수, 함수를 정의 할때는 Argument 혹은 인자 하고 부릅니다.
+    -이벤트 핸들러에 매개변수를 전달해야 하는 경우도 많습니다.
+```js
+<button onClick="{(event) => this.deleteItem(id, event)}">삭제하기</button>
+<button onClick="{this.deleteItem.bind(this.id)}">삭제하기</button>
+```
+    -위의 코드는 모두 동일한 역할을 하지만 하나는 화살표 함수를, 다른 하나는 bind를 사용했습니다.
+    -event라는 매개변수는 이랙트의 이벤트 객체를 의미합니다.
+    -두 방법 모두 첫 번째 매개변수는 id이고 두번째 매개변수로 event가 전달 됩니다.
+    -첫번째 코드는 명시적으로 event를 매개변수로 넣어주었고,
+     두번째 코드는 id 이후 두번째 매개변수로 event가 자동 전달됩니다.
+
+
 <h2>7주차 2023-04-13</h2>
 <h3>useState</h3>
     
